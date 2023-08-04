@@ -26,4 +26,6 @@ RUN mv /app/code/providers /app/code/providers-orig && ln -sf /app/data/provider
 
 ADD start.sh first_run.sh /app/code/
 
+WORKDIR /app/code/
+
 CMD [ "/app/code/start.sh" ]
